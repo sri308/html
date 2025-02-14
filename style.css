@@ -1,65 +1,81 @@
-h1{
-    color: rgb(28, 2, 119);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 400%;
-    font-style: bold;
-    text-decoration: underline;
-    text-align: center;
-    text-transform: uppercase;
-}
-h2{
-    color: rgb(8, 136, 30);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:large;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;
-
-
-}
-h3{
-    color: rgb(6, 4, 107);
+body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
-    text-decoration: underline;
-    font-style: bold;
+    background: #f5ebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    background-image: url(login-background-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    width: 400px;
+    padding: 20px;
+    position: relative;
+    background: #f7f6f6;
+    text-align: center;
+    border-radius: 10px;
+    height: 600px;
+  
     
 }
 
-h4{
-    color: rgb(6, 4, 107);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
-    text-decoration: underline;
-    font-style: bold;
-    line-height: 1.6em;
+.box img.User {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }
 
-
-
-
-p{
-	line-height: 1.6em;
-    color: rgb(0, 0, 0);
-    font-style: bold;
-    font-family:sans-serif;
-    font-size: x-large;
-
-
+.box h1 {
+   
+    color: hsl(239, 93%, 21%);
+    text-transform: uppercase;
+    font-size: 22px;
     
 }
-.c4{
-    font-style:normal;
-    list-style:circle;
-}
-.blocks{
-    float:right;
-    width: 33.3%;
-    border:darkblue;
-    border-radius: inherit;
-    padding-bottom: 20px;
-    box-sizing:border-box;
-    list-style:inside;
-    color: rgb(0, 0, 0);
+
+.box input[type="text"], .box input[type="password"], .box input[type="email"] {
+    width: 50%;
+    padding: 5px;
+    margin: 2px 0;
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
+.box input[type="submit"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    background: #3105d1;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+
+.box input[type="submit"]:hover {
+    background: #129ddd;
+    
+}
+
+.box a {
+    color: #eb0707;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.box a:hover {
+    color: #1d0fe6;
+}
+
+#ErrorBox, #RegisterErrorBox {
+    color: rgb(228, 20, 20);
+    margin-top: 10px;
+    font-size: 14px;
+}
